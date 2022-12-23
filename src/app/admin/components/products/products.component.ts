@@ -31,11 +31,11 @@ export class ProductsComponent extends BaseComponent implements OnInit {
     //     }
     //   )
     //   .subscribe();
-    this.httpClient
-      .get({
-        controller: 'products',
-      })
-      .subscribe((data) => console.log(data));
+    // this.httpClient
+    //   .get({
+    //     controller: 'products',
+    //   })
+    //   .subscribe((data) => console.log(data));
     // this.httpClient
     //   .delete(
     //     {
@@ -44,7 +44,6 @@ export class ProductsComponent extends BaseComponent implements OnInit {
     //     '0c02de8f-bd24-4d95-ae2c-c47daec8976b'
     //   )
     //   .subscribe();
-
     // this.httpClient
     //   .post(
     //     {

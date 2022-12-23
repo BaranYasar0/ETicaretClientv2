@@ -12,6 +12,8 @@ import {
 } from 'src/app/services/admin/alertify.service';
 import { ProductService } from 'src/app/services/common/models/product.service';
 
+declare var $: any;
+
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
@@ -31,6 +33,8 @@ export class ListComponent extends BaseComponent implements OnInit {
     'price',
     'createdDate',
     'updatedDate',
+    'delete',
+    'edit',
   ];
   dataSource: MatTableDataSource<list_product> = null;
   @ViewChild(MatPaginator) paginator: MatPaginator;
