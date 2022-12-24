@@ -11,6 +11,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { DeleteDirective } from 'src/app/directives/admin/delete.directive';
+import { MatDialogModule } from '@angular/material/dialog';
+
 @NgModule({
   declarations: [
     ProductsComponent,
@@ -24,6 +26,7 @@ import { DeleteDirective } from 'src/app/directives/admin/delete.directive';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
+    MatDialogModule,
     MatTableModule,
     MatPaginatorModule,
     RouterModule.forChild([{ path: '', component: ProductsComponent }]),
