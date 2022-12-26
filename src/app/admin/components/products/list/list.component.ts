@@ -58,6 +58,8 @@ export class ListComponent extends BaseComponent implements OnInit {
     this.paginator.length = allProducts.totalCount;
   }
 
+
+  
   pageChanged() {
     this.getProducts();
   }
